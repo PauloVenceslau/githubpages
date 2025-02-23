@@ -1,0 +1,24 @@
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: white; /* Fundo branco */
+    color: black; /* Texto preto */
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+    border: 2px solid black; /* Adicionando uma borda preta */
+}
+
+.home-button:hover {
+    background-color: lightblue; /* Fundo azul claro */
+    color: red; /* Texto vermelho */
+}

@@ -1,0 +1,95 @@
+
+.imagem {
+  width: 350px; /* Defina a largura fixa que você deseja */
+  height: 350px; /* Defina a altura fixa para manter o mesmo tamanho */
+  object-fit: cover; /* Isso vai garantir que a imagem preencha o espaço sem distorcer */
+}
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+/* Estilo básico do botão */
+.buttonB, .buttonR, .buttonG {
+  position: relative;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background: transparent;
+  border: 2px solid;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s ease;
+}
+
+.buttonB::before, .buttonR::before, .buttonG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-90deg);
+  transition: transform 0.7s, background-color 0.7s;
+  z-index: -1;
+}
+
+/* Estilização específica para cada botão */
+.buttonB {
+  border-color: #0077ff;
+}
+
+.buttonB::before {
+  background-color: #0077ff;
+}
+
+.buttonB:hover::before {
+  background-color: #0055cc;
+}
+
+.buttonR {
+  border-color: #ff0000;
+}
+
+.buttonR::before {
+  background-color: #ff0000;
+}
+
+.buttonR:hover::before {
+  background-color: #cc0000;
+}
+
+.buttonG {
+  border-color: #00cc44;
+}
+
+.buttonG::before {
+  background-color: #00cc44;
+}
+
+.buttonG:hover::before {
+  background-color: #009933;
+}
+
+.buttonB:hover, .buttonR:hover, .buttonG:hover {
+  color: white;
+}
+
+.buttonB:hover::before, .buttonR:hover::before, .buttonG:hover::before {
+  transform: skewY(0deg);
+}
